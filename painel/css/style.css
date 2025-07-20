@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'texto';
+}
+/*
+@font-face {
+    font-family: 'texto';
+    src: url('/fonts/OpenSans-Regular.ttf');
+}
+*/
+html,body{
+    height: 100%;
+    background-color: grey;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* estilizando a caixa de login------------*/
+.box-login{
+    max-width: 600px;
+    width: 95%;
+    padding: 40px 2%;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.box-login input[type=text],
+.box-login input[type=password]
+{
+    width: 100%;
+    height: 40px;
+    border: 1px solid#ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+.box-login input[type=submit]{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #c2185b;
+    color: white;
+    border: none;
+}
+.erro-box{
+    width: 100%;
+    padding: 8px 2%;
+    text-align: center;
+    background: #ef5350;
+    color: white;
+    font-size: 15px;
+}
+/*fim-login-----------------*/
+.clear{clear:both;}
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.menu-wraper{
+    width: 300px;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background: white;
+    float: left;
+    width: 300px;
+}
+div.box-usuario{
+    padding: 8px;
+	text-align: center
+}
+.itens-menu{
+
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+.itens-menu a{
+   /* font-family: texto;*/
+   margin-top: 10px;
+   text-align: left;
+   display: block;
+   text-decoration: none;
+   border-bottom: black 1px solid;
+   
+   
+}
+.itens-menu h2{
+    background-color: rgb(176, 176, 176);
+}
+.avatar-usuario{
+    display: inline-block;
+   text-align: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.avatar-usuario img{
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    position: relative;
+}
+.imagem-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border: 3px solid grey;
+    border-radius: 50%
+    
+}
+.imagem-usuario img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+
+}
+.nome-usuario{
+    text-align: center;
+    margin-top: 15px;
+}
+.nome-usuario p{
+    color: black;
+    font-size: x-large;
+    font-weight: 300;
+
+}
+header{
+    position: relative;
+    left: 300px;
+    padding: 25px 0;
+    background: #1de9b6;
+    width: calc(100% - 300px);                                             
+   
+}
+.menu-btn img{
+    width: 30px;
+    height: 30px;
+}
+.menu-btn{
+    float: left;
+    width: 24px;
+    height: 28px;
+    cursor: pointer;
+}
+.loggout{
+    float: right;
+}
+.loggout a{
+    float: right;
+    margin: 0 10px;
+
+}
+.loggout a img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+/* conteudo do painel-------- */
+
+
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 46%;
+    background: goldenrod !important;
+    margin: 0 2%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px; 
+    padding: 20px;
+}
+.box-content{
+    
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box-metrica-single{
+    float: left;
+	position: relative;
+	width: 33.3%;
+    background: #F4B03E;
+	border: 5px solid white;
+}
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+    font: texto;
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+/* tabelas ------------*/
+table{
+    margin: 20px 0;
+    width: 100%;
+    border-collapse:collapse ;
+    color: white;
+}
+table tr:nth-of-type(1){
+    background: #555;
+    color: white;
+}
+table tr{
+    border-bottom: 1px solid #ccc;
+}
+table tr{
+    color: #555;
+    border-bottom: 1px solid;
+}
+table td{
+    padding: 8px;
+}
+
+table a.btn{
+    font-size: 13px;
+    text-decoration: none;
+    padding: 4px 6px;
+    color: white;
+    
+}
+a.btn.edit{
+    background: goldenrod;
+}
+a.btn.delete{
+    background: red; 
+}
+.giro img{
+    transform: rotate(180deg);
+}
+/* paginação-------------------*/
+.paginacao{
+    text-align: center;
+}
+.paginacao a{
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #666;
+
+}
+.paginacao a.page-selected{
+    background: rgb(220, 220, 220);
+}
+
+
+/* painel editar usuario-------------------*/
+.check{
+    float: left;
+    margin-right: 10px;
+}
+.box-content form{
+    margin: 30px 0;
+}
+.box-content .form-group{
+    margin: 15px 0;
+}
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+.box-content form input[type=text],
+.box-content form input[type=password]
+{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+.box-content form textarea{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+.box-content form select{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+.box-content form input[type=file]{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.box-content form input[type=submit]{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #18b58d;
+    color: white;
+    border: none;
+}
+
+/* caixa de alerta------------------------*/
+.box-alert{
+    width: 100%;
+    padding:8px 0;
+    text-align: center;
+}
+.sucesso{
+    background-color: rgb(79, 208, 79);
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.erro{
+    background-color: rgb(232, 99, 99);
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+/* tabela responsiva-------------------- */
+.table-responsive{
+    margin: 20px auto;
+    max-width: 1280px;
+    
+}
+.table-responsive .row:nth-of-type(1){
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    background-color: grey;
+    color: white;
+    padding: 8px 0;
+}
+.table-responsive .row{
+    text-align: center;
+    color: #777;
+    padding: 8px 0;
+}
+.col{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+/*editar usuario------------*/
+.menu-active{
+    background: grey;
+}
+.menu-active::before{
+    content: '> ';
+}
+/* check box usuario______________*/
+.form-group-login{
+    font-size: 13px;
+    font-weight: 300;
+    padding-right: 6px;
+    color: black;
+}
+form .form-group-login:nth-last-of-type(2){
+    position: relative;
+    top: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .menu-wraper{
+        width: 200px;
+    }
+    
+}
